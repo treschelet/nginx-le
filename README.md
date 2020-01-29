@@ -28,11 +28,11 @@ services:
 ```
 
 ## Environment variables
-TZ - TimeZone
-LETSENCRYPT - if `true` enables Let`s Encrypt automatic certificate install and renewal
-LE_EMAIL - email for domains
-LE_FQDN_<label> - domain, for multiple FQDNs you can pass comma-separated list `a.example.com,b.example.com`
-DNS - if `true` uses DNS validation for Let`s Encrypt
-DNS_PROPAGATION - timeout for check DNS txt records
-DNS_PROVIDER - supported provides `cloudflare|cloudxns|digitalocean|dnsimple|dnsmadeeasy|google|linode|luadns|nsone|ovh|rfc2136|route53`
-DNS_CREDENTIALS - path to provider credentials file
+- TZ - TimeZone
+- LETSENCRYPT - if `true` enables Let's Encrypt automatic certificate install and renewal
+- LE_EMAIL - email for domains
+- LE_FQDN_<label> - domain, for multiple FQDNs you can pass comma-separated list `a.example.com,b.example.com`
+- DNS - if `true` uses DNS validation for Let`s Encrypt
+- DNS_PROPAGATION - timeout for check DNS txt records
+- DNS_PROVIDER - supported provides `cloudflare|cloudxns|digitalocean|dnsimple|dnsmadeeasy|google|linode|luadns|nsone|ovh|rfc2136|route53`
+- DNS_CREDENTIALS - path to provider credentials file

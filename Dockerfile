@@ -1,4 +1,4 @@
-FROM nginx:1.17-alpine
+FROM nginx:1.17.8-alpine
 
 ENV TZ UTC
 ENV DNS false
@@ -17,18 +17,18 @@ RUN \
 
 RUN pip3 install --upgrade pip
 RUN pip3 install \
-    certbot-dns-cloudflare \
-    certbot-dns-cloudxns \
-    certbot-dns-digitalocean \
-    certbot-dns-dnsimple \
-    certbot-dns-dnsmadeeasy \
-    certbot-dns-google \
-    certbot-dns-linode \
-    certbot-dns-luadns \
-    certbot-dns-nsone \
-    certbot-dns-ovh \
-    certbot-dns-rfc2136 \
-    certbot-dns-route53
+    certbot-dns-cloudflare==0.35.1 \
+    certbot-dns-cloudxns==0.35.1 \
+    certbot-dns-digitalocean==0.35.1 \
+    certbot-dns-dnsimple==0.35.1 \
+    certbot-dns-dnsmadeeasy==0.35.1 \
+    certbot-dns-google==0.35.1 \
+    certbot-dns-linode==0.35.1 \
+    certbot-dns-luadns==0.35.1 \
+    certbot-dns-nsone==0.35.1 \
+    certbot-dns-ovh==0.35.1 \
+    certbot-dns-rfc2136==0.35.1 \
+    certbot-dns-route53==0.35.1
 
 VOLUME ["/etc/letsencrypt"]
 

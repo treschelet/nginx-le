@@ -46,7 +46,7 @@ mv -v /etc/nginx/conf.d /etc/nginx/conf.d.disabled
     mv -v /etc/nginx/conf.d.disabled /etc/nginx/conf.d 2>/dev/null #on the first run enable config back
     echo "reload nginx with ssl"
     nginx -s reload
-    sleep 10d
+    sleep 1d
  done
 ) &
 
